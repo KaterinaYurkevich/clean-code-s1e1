@@ -98,9 +98,7 @@ button {
 
 .add-task__input,
 .task-list__elem__task_input,
-.task-completed__elem__task_input,
-.task-list__elem__task,
-.task-completed__elem__task {
+.task-completed__elem__task_input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -180,7 +178,7 @@ button {
 
 /* Completed */
 
-.task-completed__elem__task {
+#completed-tasks .task-list__elem__task {
   text-decoration: line-through;
   color: #888;
 }
