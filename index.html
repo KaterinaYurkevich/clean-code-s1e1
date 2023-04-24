@@ -23,12 +23,12 @@
         <button id="add-task" class="add-task__button">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
+    <h3 class="main__header">Todo</h3>
     <ul id="incomplete-tasks" class="task-list">
       <li class="task-list__elem">
         <input type="checkbox" class="task-list__elem__input">
         <label class="task-list__elem__task">Pay Bills</label>
-        <input type="text" class="task-list__elem__task">
+        <input type="text" class="task-list__elem__task_input">
         <button class="task-list__elem__button">Edit</button>
         <button class="ask-list__elem__button-del button-del">
           <img src="./remove.svg">
@@ -37,19 +37,19 @@
       <li class="task-list__elem task-list__elem-change">
         <input type="checkbox" class="task-list__elem__input">
         <label class="task-list__elem__task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task-list__elem__task">
+        <input type="text" value="Go Shopping" class="task-list__elem__task_input">
         <button class="task-list__elem__button">Save</button>
         <button class="ask-list__elem__button-del button-del">
           <img src="./remove.svg">
         </button>
       </li>
     </ul>
-    <h3>Completed</h3>
+    <h3 class="main__header">Completed</h3>
     <ul id="completed-tasks" class="task-completed">
       <li class="task-completed__elem">
         <input type="checkbox" checked class="task-completed__elem__input">
-        <label class="task-completed__elem__task">See the Doctor</label>
-        <input type="text" class="task-completed__elem__task">
+        <label class="task-list__elem__task task-completed__elem__task">See the Doctor</label>
+        <input type="text" class="task-completed__elem__task_input task-list__elem__task_input">
         <button class="task-completed__elem__button task-list__elem__button">Edit</button>
         <button class="task-completed__elem__button-del button-del">
           <img src="./remove.svg">

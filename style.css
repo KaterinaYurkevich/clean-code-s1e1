@@ -35,7 +35,9 @@ body {
 
 .add-task__input,
 .task-list__elem__task,
-.task-completed__elem__task {
+.task-completed__elem__task,
+.task-list__elem__task_input,
+.task-completed__elem__task_input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -45,13 +47,15 @@ body {
   display: flex;
 }
 
-ul {
+.task-list,
+.task-completed {
   margin: 0;
   padding: 0px;
 }
 
-li,
-h3 {
+.task-list__elem,
+.task-completed__elem,
+.main__header {
   list-style: none;
 }
 
@@ -60,7 +64,9 @@ button {
   outline: none;
 }
 
-button {
+.add-task__button,
+.task-list__elem__button,
+.button-del {
   background: none;
   border: 0px;
   color: #888;
@@ -70,15 +76,17 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.add-task__button:hover,
+.task-list__elem__button:hover,
+.button-del:hover {
   color: #3a3a3a;
 }
 
 
 /* Heading */
 
-h3,
-label[for="new-task"] {
+.main__header,
+.add-task__header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,7 +96,11 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.add-task__input,
+.task-list__elem__task_input,
+.task-completed__elem__task_input,
+.task-list__elem__task,
+.task-completed__elem__task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -101,7 +113,9 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.add-task__input:focus,
+.task-list__elem__task_input:focus,
+.task-completed__elem__task_input:focus {
   color: #333;
 }
 
@@ -120,7 +134,8 @@ input[type="text"]:focus {
 
 /* Task list */
 
-li {
+.task-list__elem,
+.task-completed__elem {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -129,22 +144,24 @@ li {
   align-items: center;
 }
 
-li>* {
+.task-list__elem>*,
+.task-completed__elem>* {
   vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+.task-completed__elem__input,
+.task-list__elem__input {
   margin: 0 10px;
 }
 
-li>label {
+.task-list__elem__task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li>input[type="text"] {
+.task-list__elem__task_input {
   width: 226px
 }
 
@@ -163,22 +180,22 @@ li>input[type="text"] {
 
 /* Completed */
 
-ul#completed-tasks label {
+.task-completed__elem__task {
   text-decoration: line-through color: #888;
 }
 
 
 /* Edit Task */
 
-ul li input[type="text"] {
+.task-list__elem__task_input {
   display: none
 }
 
-.task-list__elem-change input[type="text"] {
+.task-list__elem-change .task-list__elem__task_input {
   display: inline-block;
   width: 224px
 }
 
-.task-list__elem-change label {
+.task-list__elem-change .task-list__elem__task {
   display: none;
 }
