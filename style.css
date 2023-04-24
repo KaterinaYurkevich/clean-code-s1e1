@@ -40,7 +40,7 @@ body {
 .task-completed__elem__task_input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-task {
@@ -162,7 +162,7 @@ button {
 }
 
 .task-list__elem__task_input {
-  width: 226px
+  width: 226px;
 }
 
 .ask-list__elem__button-del img,
@@ -181,19 +181,20 @@ button {
 /* Completed */
 
 .task-completed__elem__task {
-  text-decoration: line-through color: #888;
+  text-decoration: line-through;
+  color: #888;
 }
 
 
 /* Edit Task */
 
 .task-list__elem__task_input {
-  display: none
+  display: none;
 }
 
 .task-list__elem-change .task-list__elem__task_input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .task-list__elem-change .task-list__elem__task {
